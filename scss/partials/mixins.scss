@@ -1,10 +1,38 @@
 // _mixins.scss
-@mixin respond-to($breakpoint) {
-    @if map-has-key($breakpoints, $breakpoint) {
-        @media (min-width: map-get($breakpoints, $breakpoint)) {
+
+// Flexbox Utility
+@mixin flex($direction: row, $justify: flex-start, $align: stretch) {
+    display: flex;
+    flex-direction: $direction;
+    justify-content: $justify;
+    align-items: $align;
+}
+
+// Border Radius
+@mixin rounded($radius: $border-radius) {
+    border-radius: $radius;
+}
+
+// Text Styling
+@mixin text-style($color: $text-color, $size: 14px, $weight: normal) {
+    color: $color;
+    font-size: $size;
+    font-weight: $weight;
+}
+
+// Media Query for Responsiveness
+@mixin responsive($breakpoint) {
+    @if $breakpoint == small {
+        @media (max-width: 576px) {
             @content;
         }
-    } @else {
-        @warn "Unknown breakpoint #{$breakpoint}.";
+    } @else if $breakpoint == medium {
+        @media (max-width: 768px) {
+            @content;
+        }
+    } @else if $breakpoint == large {
+        @media (max-width: 992px) {
+            @content;
+        }
     }
 }

@@ -1,99 +1,186 @@
-.header{
-    width: 100%;
-    display: flex;
-    justify-content: center;
-    position: sticky;
-    top: 0;
-    z-index: 10;
-}
-.content{
-    display: flex;
-    flex-direction: row;
-    width: 100%;
-    justify-content: space-between;
-    margin: 16px 16px 16px 16px;
-}
-.left-container{
-    display: flex;
-    flex-direction: row;
-    align-items: center;
-   width: 100%;
-    gap: 8px;
-    max-width: 268px ;
-}
-.search-container{
-    display: flex;
-    flex-direction: row;
-    width: 100%;
-    background-color: #F0F2F5;
-    border-radius: 32px;
-    padding-left: 8px;
-}
-.search-container .sub-container{
-    display: flex;
-    flex-direction: row;
-    align-items: center;
-    gap: 8px;
-}
-.search-container .sub-container p{
-    font-family: "Segoe Fluent Icons";
-    font-size: 14px;
-    color: #7D7D7D;
-}
-.menu-list {
-    display: flex;
-    flex-direction: row;
-    justify-content: center; 
-    gap: 48px; 
-    width: 100%;
-}
-.list-item {
-    width: 48px;
-    height: 48px; 
-    padding: 8px; 
-    display: flex; 
-    justify-content: center; 
-    align-items: center;
-    transition: transform 0.2s ease-in-out; 
-}
-.list-item a {
-    width: 100%; 
-    height: 100%;
-    display: flex;
-    justify-content: center; 
-    align-items: center; 
-    text-decoration: none; 
-}
-.list-item img {
-    max-width: 100%;
-    max-height: 100%; 
+// _variables.scss
+$primary-bg: #3a3b3c;
+$secondary-bg: #414344;
+$text-color: #b0b3b8;
+$hover-scale: 1.1;
+
+// _mixins.scss
+@mixin flex($direction: row, $justify: flex-start, $align: stretch) {
+  display: flex;
+  flex-direction: $direction;
+  justify-content: $justify;
+  align-items: $align;
 }
 
-.list-item:hover {
-    transform: scale(1.1); 
-    cursor: pointer; 
-}
-.right-container {
-    display: flex;
-    flex-direction: row;
-    align-items: center;  
-    gap: 12px;  
-    padding-right: 20px;  
-}
-.menu {
-    display: flex;
-    flex-direction: row;
-    gap: 8px;  
-}
-.item {
-    width: 44px;
-    height: 44px;
-    display: flex;
-    justify-content: center; 
-    align-items: center;
+@mixin circle($size) {
+  width: $size;
+  height: $size;
+  border-radius: 50%;
 }
 
-.item img {
-    width: 80%; 
-    height: auto;  
+// Updated Header SCSS
+.header {
+  width: 100%;
+  position: sticky;
+  top: 0;
+  z-index: 10;
+  background-color: $primary-bg;
+
+  .content {
+    @include flex(row, space-between, center);
+    width: 100%;
+    background-color: $primary-bg;
+  }
+
+  .left-container {
+    @include flex(row, flex-start, center);
+    gap: 16px;
+    max-width: 328px;
+    padding: 0 20px;
+    width: 100%;
+
+    .logo-container {
+      @include circle(40px);
+      @include flex(center, center);
+      img {
+        width: 100%;
+        height: auto;
+      }
+    }
+
+    .search-container {
+      @include flex(row, flex-start, center);
+      flex-grow: 1;
+      background-color: $secondary-bg;
+      border-radius: 32px;
+      padding: 8px 12px;
+      width: 100%;
+      margin: 5px 0;
+
+      .sub-container {
+        @include flex(row, flex-start, center);
+        gap: 8px;
+
+        svg {
+          color: $text-color;
+          width: 18px;
+          height: 18px;
+        }
+
+        p {
+          font-family: "Segoe Fluent Icons";
+          font-size: 14px;
+          color: $text-color;
+          white-space: nowrap;
+        }
+      }
+
+      input {
+        border: none;
+        outline: none;
+        background: none;
+        color: $text-color;
+        font-family: inherit;
+        font-size: 14px;
+        flex-grow: 1;
+      }
+    }
+  }
+
+  .menu-list {
+    @include flex(row, center, center);
+    gap: 48px;
+    width: 100%;
+
+    ul {
+      list-style: none;
+      @include flex(row, center, center);
+      gap: 48px;
+      padding: 0;
+      margin: 0;
+    }
+
+    .list-item {
+      @include circle(48px);
+      @include flex(center, center);
+      padding: 8px;
+      transition: transform 0.2s ease-in-out;
+      align-items: center;
+
+      &:hover {
+        transform: scale($hover-scale);
+        cursor: pointer;
+      }
+
+      a {
+        @include flex(center, center);
+        text-decoration: none;
+        color: var(--secondary-icon, $text-color);
+      }
+
+      svg {
+        width: 24px;
+        height: 24px;
+        fill: currentColor;
+      }
+    }
+  }
+
+  .right-container {
+    @include flex(row, flex-start, center);
+    gap: 12px;
+    padding-right: 20px;
+
+    .menu {
+      @include flex(row, center, center);
+      gap: 8px;
+
+      .item {
+        @include circle(44px);
+        position: relative;
+        background-color: $secondary-bg;
+        transition: transform 0.2s ease-in-out;
+
+        &:hover {
+          transform: scale($hover-scale);
+          cursor: pointer;
+        }
+
+        a {
+          @include flex(center, center);
+          width: 100%;
+          height: 100%;
+          text-decoration: none;
+          color: $text-color;
+        }
+
+        svg {
+          width: 20px;
+          height: 20px;
+          fill: currentColor;
+        }
+
+        .badge {
+          position: absolute;
+          top: 4px;
+          right: 4px;
+          @include circle(18px);
+          background-color: $badge-color;
+          color: #fff;
+          font-size: 12px;
+          font-weight: bold;
+          box-shadow: 0 0 2px rgba(0, 0, 0, 0.2);
+        }
+      }
+    }
+
+    a.profile {
+      @include flex(center, center);
+
+      img {
+        @include circle(44px);
+        object-fit: cover;
+      }
+    }
+  }
 }
