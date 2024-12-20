@@ -1,3 +1,5 @@
-// index.scss
+@import 'partials/variables';
+@import 'partials/mixins';
 @import 'partials/base';
 @import 'partials/header';
+@import 'partials/profile-banner';

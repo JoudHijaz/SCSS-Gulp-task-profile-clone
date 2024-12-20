@@ -1,18 +1,48 @@
-// _variables.scss
+// Color Palette
+$color-white: #ffffff;
+$color-black: #000000;
+$color-gray-light: #b0b3b8;
+$color-gray-dark: #333;
+$color-red: #f02849;
+$color-transparent-black: rgba(0, 0, 0, 0.5);
+$color-light-blue: #1775d1;  // Adjusted to a more standard shade of blue
+$search-bg-color: #eeeeee;   // Consistency in hex value length
+$color-button-hover: #ececec; 
+// Theme Colors
 
-// Colors
-$primary-color: #3a3b3c;
-$secondary-color: #414344;
-$text-color: #b0b3b8;
-$background-color: #252526;
+$primary-bg-color: $color-white;
+$secondary-bg-color: $color-white;
+$text-color: $color-gray-dark;
+$icon-bg-color: $color-transparent-black;
+$badge-color: $color-red;
+$background-color: $color-white;
+$box-shadow-basic: 0 2px 4px rgba(0, 0, 0, 0.2);
+
+// Typography
+$font-primary: 'Segoe UI', sans-serif;
+$font-icons: 'Segoe Fluent Icons';  // Verify this is included in your project or accessible
+$font-size-small: 12px;
+$font-size-medium: 14px;  // Added for common text sizes
+$font-size-large: 24px;   // Standardized large text size
 
 // Spacing
-$padding-small: 8px;
-$padding-medium: 16px;
-$padding-large: 24px;
+$padding-xs: 8px;
+$padding-sm: 16px;
+$padding-md: 24px;
+$padding-lg: 32px;
+$gap-small: 8px;
+$gap-medium: 16px;
+$gap-large: 48px;
 
-// Border Radius
-$border-radius: 32px;
+// Borders and Effects
+$border-radius-small: 5px;  // Adjusted for more typical use
+$border-radius-medium: 16px;  // Added for intermediate border-radius usage
+$border-radius-full: 50%;
+$hover-scale: 1.05;  // Slightly reduced for subtlety
+$border-radius-circle: 50%;
+$border-medium: 2px solid #ccc; 
+$border-thin: 1px solid #ccc;
 
-// Font Families
-$font-main: 'Segoe UI', sans-serif;
+// Breakpoints
+$breakpoint-mobile: 768px;  // Standardizing to more common mobile breakpoint
+$profile-image-size: 125px

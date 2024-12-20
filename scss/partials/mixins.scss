@@ -1,38 +1,75 @@
-// _mixins.scss
-
-// Flexbox Utility
-@mixin flex($direction: row, $justify: flex-start, $align: stretch) {
-    display: flex;
-    flex-direction: $direction;
-    justify-content: $justify;
-    align-items: $align;
+// Flexbox Layout
+@mixin flex($direction: row, $justify-content: flex-start, $align-items: center, $wrap: nowrap) {
+  display: flex;
+  flex-direction: $direction;
+  justify-content: $justify-content;
+  align-items: $align-items;
+  flex-wrap: $wrap;
 }
 
-// Border Radius
-@mixin rounded($radius: $border-radius) {
-    border-radius: $radius;
+// Circle Shape for Profile Images
+@mixin circle($size: $profile-image-size, $border: none) {
+  width: $size;
+  height: $size;
+  border-radius: $border-radius-circle;
+  border: $border;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  overflow: hidden; // Ensures images fit neatly within the circle
+  position: relative;
+}
+@mixin truncate {
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
+// Button Styling
+@mixin button-style($bg-color: $color-white, $text-color: $color-gray-dark, $font-size: $font-size-small) {
+  padding: $padding-xs $padding-sm;
+  background-color: $bg-color;
+  color: $text-color;
+  border: none;
+  border-radius: $border-radius-small;
+  cursor: pointer;
+  font-size: $font-size;
+  outline: none;
+  transition: background-color 0.2s ease, color 0.2s ease;
+
+  &:hover, &:focus {
+    background-color: $color-button-hover;
+    color: darken($text-color, 10%); // Slightly darken the text on hover/focus for better visibility
+  }
+
+  &:focus {
+    outline: 2px solid lighten($bg-color, 20%); // Enhance accessibility with visible outline
+  }
 }
 
-// Text Styling
-@mixin text-style($color: $text-color, $size: 14px, $weight: normal) {
-    color: $color;
-    font-size: $size;
-    font-weight: $weight;
+// Hover Transformation for Interactive Elements
+@mixin hover-transform($scale-factor: 1.05) {
+  transition: transform 0.3s ease-in-out;
+  &:hover {
+    transform: scale($scale-factor);
+    cursor: pointer;
+  }
 }
 
-// Media Query for Responsiveness
-@mixin responsive($breakpoint) {
-    @if $breakpoint == small {
-        @media (max-width: 576px) {
-            @content;
-        }
-    } @else if $breakpoint == medium {
-        @media (max-width: 768px) {
-            @content;
-        }
-    } @else if $breakpoint == large {
-        @media (max-width: 992px) {
-            @content;
-        }
-    }
+// Icon Styling
+@mixin icon-badge($size: 16px, $bg-color: $color-gray-light, $text-color: $color-white) {
+  position: absolute;
+  bottom: 0;
+  right: 0;
+  padding: $padding-xs;
+  color: $text-color;
+  background-color: $bg-color;
+  border-radius: $border-radius-circle;
+  font-size: $size;
+}
+
+// Responsive Visibility
+@mixin hide-on-mobile($max-width: $breakpoint-mobile) {
+  @media (max-width: $max-width) {
+    display: none;
+  }
 }

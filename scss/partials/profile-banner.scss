@@ -1,0 +1,321 @@
+.profile-banner {
+  display: flex;
+  position: relative;
+  flex-direction: column;
+  width: 100%;
+  align-items: center;
+  box-shadow: $box-shadow-basic;
+
+  .container {
+    display: flex;
+    flex-direction: column;
+    position: relative;
+    width: 100%;
+    align-items: center;
+    max-width: 916px;
+  }
+
+  .cover-photo {
+    width: 100%;
+    height: 300px;
+    background-color: $color-black;
+    position: relative;
+    /*background: linear-gradient(
+      to bottom,
+      rgba(211, 211, 211, 1) 0%, /* Light gray at the top 
+      rgba(211, 211, 211, 1) 60%,  Extend light gray 
+      rgba(0, 0, 0, 0.5) 100% Transition to black with opacity 
+    );*/
+  }
+
+  .add-photo {
+    width: 100%;
+    background-color: $color-black;
+    border-bottom-right-radius: $border-radius-medium;
+    border-bottom-left-radius: $border-radius-medium;
+
+    .container {
+      @include flex(row, flex-end, center);
+      background-color: $color-black;
+      border-radius: $border-radius-medium;
+      gap: $gap-small;
+      width: 100%;
+      padding-bottom: 10px;
+
+      button {
+        margin: 0;
+        padding: $padding-xs $padding-sm;
+        border-radius: $border-radius-small;
+        margin-top: 10px;
+        margin-right: 20px;
+        font-size: $font-size-small;
+        background-color: $color-white;
+        cursor: pointer;
+        border: none;
+        outline: none;
+        color: $color-gray-dark;
+      }
+    }
+  }
+
+  .profile-section {
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    border-bottom: $border-thin;
+
+    .profile-section-in {
+      font-family: $font-primary;
+      padding: 0;
+      width: 100%;
+      height: 120px;
+      display: grid;
+      grid-template-columns: 2fr 4fr 4fr;
+      margin-left: 40px;
+      margin-right: 40px;
+
+      .profile-image-div {
+        position: relative;
+        width: $profile-image-size;
+        height: $profile-image-size;
+        margin-left: 20px;
+        transform: translateY(-30px);
+        background-color: $color-gray-dark;
+        border: 3px solid $color-white;
+        border-radius: $border-radius-circle;
+
+        img {
+          font-family: $font-primary;
+          margin: 0;
+          padding: 0;
+          width: 100%;
+          height: 100%;
+          object-fit: cover;
+          cursor: pointer;
+          border-radius: $border-radius-circle;
+          transition: 0.3s;
+        }
+
+        span {
+          margin: 0;
+          -webkit-font-smoothing: antialiased;
+          display: inline-block;
+          font-style: normal;
+          text-rendering: auto;
+          line-height: 1;
+          font-variant: normal;
+          font-family: "Font Awesome 5 Free";
+          font-weight: 900;
+          position: absolute;
+          right: 5px;
+          bottom: 5px;
+          cursor: pointer;
+          background-color: $color-gray-light;
+          font-size: 18px;
+          color: $color-gray-dark;
+          padding: 5px;
+          border-radius: $border-radius-circle;
+        }
+      }
+
+      .profile-name-info {
+        @include flex(column, flex-start, flex-start);
+        gap: $gap-small;
+
+        h1 {
+          margin: 0 0 0 $padding-xs;
+          padding: 0;
+          font-size: $font-size-large;
+          color: $color-black;
+        }
+
+        p {
+          margin: 0 0 0 $padding-xs;
+          padding: 0;
+          font-size: $font-size-medium;
+          color: $color-gray-dark;
+        }
+
+        .friends-img-div {
+          margin-left: 10px;
+          margin-top: 5px;
+          width: auto; // Adjust width dynamically based on the number of images
+          display: flex; // Flexbox layout allows for better overlap control
+          align-items: center;
+        
+          .friend-img {
+            width: 25px;
+            height: 25px;
+            background-color: $color-gray-dark;
+            cursor: pointer;
+            border: 1px solid $color-white;
+            border-radius: $border-radius-circle;
+            margin-left: -6px; // Increase overlap for more prominent effect
+            z-index: 1; // Ensure proper stacking of images
+            position: relative; // Enables hover effects or stacking adjustments
+        
+            &:hover {
+              z-index: 10; // Bring hovered image to the front
+              transform: scale(1.1); // Slightly enlarge the image on hover
+              transition: transform 0.2s ease-in-out;
+            }
+        
+            img {
+              margin: 0;
+              padding: 0;
+              width: 100%;
+              height: 100%;
+              object-fit: cover;
+              cursor: pointer;
+              border-radius: $border-radius-circle;
+            }
+          }
+        }
+        
+      }
+
+      .btn-site-pro {
+        display: flex;
+        flex-direction: row;
+        padding: 0;
+        width: 100%;
+        margin-top: 47px;
+        text-align: right;
+
+        span {
+          text-align: right;
+          margin: 10px 5px 0 0;
+          font-size: $font-size-small;
+          background-color: $color-light-blue;
+          cursor: pointer;
+          color: $color-white;
+          padding: $padding-xs $padding-sm;
+          border-radius: $border-radius-small;
+
+          i {
+            text-align: right;
+            font-size: $font-size-small;
+            cursor: pointer;
+            color: $color-white;
+            margin: 0;
+            padding: 0;
+            display: inline-block;
+            font-family: "Font Awesome 5 Free";
+            font-weight: 900;
+            margin-right: 5px;
+          }
+        }
+
+        .edit-profile-btn {
+          background-color: $color-gray-light;
+          color: $color-gray-dark;
+
+          i {
+            color: $color-gray-dark;
+          }
+        }
+      }
+    }
+  }
+
+  .navbar {
+    width: 100%;
+
+    .navbar-site {
+      font-family: $font-primary;
+      display: grid;
+      grid-template-columns: 4fr 1fr;
+
+      ul {
+        list-style: none;
+        display: flex;
+        align-items: center;
+        gap: $gap-medium;
+
+        a {
+          color: $color-gray-dark;
+          cursor: pointer;
+          text-decoration: none;
+          font-weight: bold;
+        }
+      }
+
+      .nav-btn {
+        font-size: $font-size-medium;
+        padding: $padding-xs $padding-sm;
+        background-color: $color-gray-light;
+        border-radius: $border-radius-small;
+        margin-top: 8px;
+        cursor: pointer;
+        height: 20px;
+        width: 20px;
+        margin-left: 125px;
+      }
+    }
+  }
+
+  @media (max-width: $breakpoint-mobile) {
+    .cover-photo {
+      height: 80px;
+    }
+
+    .add-photo .container button span {
+      display: none;
+    }
+
+    .profile-section {
+      flex-direction: column;
+
+      .profile-section-in {
+        grid-template-columns: 1fr;
+        height: auto;
+        margin: 0;
+
+        .profile-image-site,
+        .profile-name-info,
+        .profile-button-site {
+          display: flex;
+          justify-content: center;
+          align-items: center;
+
+          .profile-image-div {
+            margin-bottom: -10px;
+            margin-left: 0;
+          }
+
+          .btn-site-pro {
+            margin: 0;
+            justify-content: center;
+            margin-bottom: 9px;
+          }
+        }
+      }
+    }
+
+    .navbar .navbar-site {
+      ul {
+        gap: 5px;
+
+        li {
+          display: none;
+
+          &.activ-navbar,
+          &#post,
+          &#about,
+          &#more {
+            display: block;
+            position: relative;
+
+            &:hover {
+              background-color: #f0f0f0;
+            }
+          }
+        }
+      }
+
+      .nav-btn {
+        margin-left: 0;
+      }
+    }
+  }
+}
