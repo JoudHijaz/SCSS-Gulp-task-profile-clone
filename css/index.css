@@ -524,3 +524,1018 @@ body {
     margin-left: 0;
   }
 }
+
+.post-section {
+  padding-top: 20px;
+  position: relative;
+  width: 100%;
+  max-width: 916px;
+}
+.post-section .post-section-in {
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-start;
+  align-items: flex-start;
+  flex-wrap: nowrap;
+  gap: 40px;
+}
+.post-section .post-section-in .info-section .container {
+  display: flex;
+  flex-direction: column;
+}
+.post-section .post-section-in .info-section .container .profile-lock-div {
+  font-family: "Segoe UI", sans-serif;
+  margin: 0;
+  border-radius: 5px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+  background-color: #ffffff;
+  display: grid;
+  grid-template-columns: 1fr 5fr;
+  padding: 10px;
+  margin-bottom: 15px;
+}
+.post-section .post-section-in .info-section .container .profile-lock-div .icon-pld i {
+  margin: 0;
+  -webkit-font-smoothing: antialiased;
+  display: inline-block;
+  font-style: normal;
+  font-variant: normal;
+  text-rendering: auto;
+  line-height: 1;
+  font-family: "Font Awesome 5 Brands";
+  font-weight: 400;
+  padding: 10px 10px;
+  background-color: #1775d1;
+  border-radius: 50%;
+  color: #ffffff;
+  font-size: 24px;
+}
+.post-section .post-section-in .info-section .container .profile-lock-div .pld-text h3 {
+  font-family: "Segoe UI", sans-serif;
+  margin: 0px;
+  padding: 0px;
+  font-size: 14px;
+  color: #333;
+  margin-top: 7px;
+  margin-left: 10px;
+}
+.post-section .post-section-in .info-section .container .profile-lock-div .pld-text a {
+  font-family: "Segoe UI", sans-serif;
+  margin: 0;
+  padding: 0;
+  text-decoration: none;
+  font-size: 12px;
+  margin-left: 8px;
+  margin-top: 8px;
+  font-weight: bold;
+  color: #1775d1;
+}
+.post-section .post-section-in .info-section .container .about-info {
+  font-family: "Segoe UI", sans-serif;
+  margin: 0;
+  border-radius: 5px;
+  padding: 16px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+  background-color: #ffffff;
+  margin-bottom: 16px;
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+  width: 296px;
+}
+.post-section .post-section-in .info-section .container .about-info h4 {
+  font-family: "Segoe UI", sans-serif;
+  margin: 0;
+  padding: 0;
+  font-size: 24px;
+  color: #000000;
+  font-weight: bold;
+}
+.post-section .post-section-in .info-section .container .about-info .add-bio-btn,
+.post-section .post-section-in .info-section .container .about-info .edit-bio-btn {
+  margin: 0;
+  width: 100%;
+  padding: 8px 0;
+  font-size: 14px;
+  border-radius: 5px;
+  border: none;
+  font-weight: bold;
+  color: #000000;
+  cursor: pointer;
+  background-color: #E4E6EB;
+}
+.post-section .post-section-in .info-section .container .about-info ul {
+  font-family: "Segoe UI", sans-serif;
+  margin: 0;
+  padding: 8px 0;
+}
+.post-section .post-section-in .info-section .container .about-info ul li {
+  margin: 0;
+  list-style: none;
+  font-size: 12px;
+  color: #333;
+  padding: 8px 0;
+}
+.post-section .post-section-in .info-section .container .about-info ul li i {
+  list-style: none;
+  font-size: 12px;
+  margin: 0;
+  padding: 0;
+  -webkit-font-smoothing: antialiased;
+  display: inline-block;
+  font-style: normal;
+  font-variant: normal;
+  text-rendering: auto;
+  line-height: 1;
+  font-family: "Font Awesome 5 Free";
+  font-weight: 900;
+  margin-right: 8px;
+  color: #b0b3b8;
+}
+.post-section .post-section-in .info-section .container .about-info ul li a {
+  list-style: none;
+  font-size: 12px;
+  margin: 0;
+  padding: 0;
+  text-decoration: none;
+  color: #000000;
+  font-weight: bold;
+}
+.post-section .post-section-in .info-section .container .box-images,
+.post-section .post-section-in .info-section .container .box-friends {
+  border-radius: 5px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+  background-color: #ffffff;
+  padding: 10px;
+  margin-bottom: 15px;
+  position: relative;
+  font-family: "Segoe UI", sans-serif;
+}
+.post-section .post-section-in .info-section .container .box-images span,
+.post-section .post-section-in .info-section .container .box-friends span {
+  font-size: 16px;
+  color: #333;
+  font-weight: bold;
+}
+.post-section .post-section-in .info-section .container .box-images span p,
+.post-section .post-section-in .info-section .container .box-images span span,
+.post-section .post-section-in .info-section .container .box-friends span p,
+.post-section .post-section-in .info-section .container .box-friends span span {
+  font-family: arial;
+  margin: 0px;
+  padding: 0px;
+  font-size: 14px;
+  color: rgba(51, 51, 51, 0.6);
+  margin-top: 5px;
+}
+.post-section .post-section-in .info-section .container .box-images .see-all-images,
+.post-section .post-section-in .info-section .container .box-friends .see-all-images {
+  margin: 0px;
+  padding: 0px;
+  font-size: 12px;
+  position: absolute;
+  right: 10px;
+  top: 10px;
+}
+.post-section .post-section-in .info-section .container .box-images .see-all-images a,
+.post-section .post-section-in .info-section .container .box-friends .see-all-images a {
+  font-size: 14px;
+  margin: 0px;
+  padding: 0px;
+  text-decoration: none;
+  color: #1775d1;
+}
+.post-section .post-section-in .info-section .container .box-images .images,
+.post-section .post-section-in .info-section .container .box-images .friends,
+.post-section .post-section-in .info-section .container .box-friends .images,
+.post-section .post-section-in .info-section .container .box-friends .friends {
+  margin: 0px;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-column-gap: 3px;
+  padding: 10px 0px 0px 0px;
+}
+.post-section .post-section-in .info-section .container .box-images .images img,
+.post-section .post-section-in .info-section .container .box-images .friends img,
+.post-section .post-section-in .info-section .container .box-friends .images img,
+.post-section .post-section-in .info-section .container .box-friends .friends img {
+  margin: 0px;
+  padding: 0px;
+  width: 100%;
+  height: 80px;
+  cursor: pointer;
+  object-fit: cover;
+  border-radius: 5px;
+}
+.post-section .post-section-in .info-section .container .box-images .images p,
+.post-section .post-section-in .info-section .container .box-images .friends p,
+.post-section .post-section-in .info-section .container .box-friends .images p,
+.post-section .post-section-in .info-section .container .box-friends .friends p {
+  margin: 0px;
+  font-size: 11px;
+  padding: 3px 5px;
+  text-align: left;
+  padding-bottom: 10px;
+}
+.post-section .post-section-in .info-section .container .box-images .images p a,
+.post-section .post-section-in .info-section .container .box-images .friends p a,
+.post-section .post-section-in .info-section .container .box-friends .images p a,
+.post-section .post-section-in .info-section .container .box-friends .friends p a {
+  font-size: 11px;
+  text-align: left;
+  margin: 0px;
+  padding: 0px;
+  text-decoration: none;
+  color: #333;
+}
+.post-section .post-section-in .post-info {
+  width: 100%;
+}
+.post-section .post-section-in .post-info .container {
+  display: flex;
+  flex-direction: column;
+}
+.post-section .post-section-in .post-info .container .box-design,
+.post-section .post-section-in .post-info .container .post-filter,
+.post-section .post-section-in .post-info .container .post-div {
+  border-radius: 5px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+  background-color: #ffffff;
+  padding: 16px;
+  margin-bottom: 16px;
+}
+.post-section .post-section-in .post-info .container .box-design .post-upload,
+.post-section .post-section-in .post-info .container .post-filter .post-upload,
+.post-section .post-section-in .post-info .container .post-div .post-upload {
+  font-family: "Segoe UI", sans-serif;
+  margin: 0px;
+  padding: 0px;
+  display: grid;
+  grid-template-columns: 1fr 7fr;
+  border-bottom: 1px solid #ccc;
+  padding-bottom: 10px;
+}
+.post-section .post-section-in .post-info .container .box-design .post-upload .profile-div,
+.post-section .post-section-in .post-info .container .post-filter .post-upload .profile-div,
+.post-section .post-section-in .post-info .container .post-div .post-upload .profile-div {
+  margin: 0px;
+  padding: 0px;
+  width: 36px;
+  height: 36px;
+  border-radius: 50%;
+}
+.post-section .post-section-in .post-info .container .box-design .post-upload .profile-div img,
+.post-section .post-section-in .post-info .container .post-filter .post-upload .profile-div img,
+.post-section .post-section-in .post-info .container .post-div .post-upload .profile-div img {
+  margin: 0px;
+  padding: 0px;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  border-radius: 50%;
+  cursor: pointer;
+}
+.post-section .post-section-in .post-info .container .box-design .post-upload .text-post,
+.post-section .post-section-in .post-info .container .post-filter .post-upload .text-post,
+.post-section .post-section-in .post-info .container .post-div .post-upload .text-post {
+  margin: 0px;
+  position: relative;
+  width: 100%;
+  padding: 7px 10px;
+  box-sizing: border-box;
+  border-radius: 25px;
+  background-color: #E4E6EB;
+  cursor: pointer;
+}
+.post-section .post-section-in .post-info .container .box-design .post-upload .text-post span,
+.post-section .post-section-in .post-info .container .post-filter .post-upload .text-post span,
+.post-section .post-section-in .post-info .container .post-div .post-upload .text-post span {
+  cursor: pointer;
+  margin: 0px;
+  padding: 0px;
+  position: absolute;
+  left: 15px;
+  top: 50%;
+  transform: translateY(-50%);
+  font-size: 15px;
+  color: #333;
+}
+.post-section .post-section-in .post-info .container .box-design .photo-upload,
+.post-section .post-section-in .post-info .container .post-filter .photo-upload,
+.post-section .post-section-in .post-info .container .post-div .photo-upload {
+  margin: 0px;
+  display: flex;
+  flex-direction: row;
+  padding: 10px 0px 0px 0px;
+}
+.post-section .post-section-in .post-info .container .box-design .photo-upload .post-upl,
+.post-section .post-section-in .post-info .container .post-filter .photo-upload .post-upl,
+.post-section .post-section-in .post-info .container .post-div .photo-upload .post-upl {
+  margin: 0px;
+  width: 100%;
+  padding: 5px 5px;
+  box-sizing: border-box;
+  background-color: #ffffff;
+  border-radius: 20px;
+  cursor: pointer;
+}
+.post-section .post-section-in .post-info .container .box-design .photo-upload .post-upl p,
+.post-section .post-section-in .post-info .container .post-filter .photo-upload .post-upl p,
+.post-section .post-section-in .post-info .container .post-div .photo-upload .post-upl p {
+  cursor: pointer;
+  margin: 0px;
+  padding: 5px 0px;
+  text-align: center;
+  font-size: 14px;
+  color: #333;
+}
+.post-section .post-section-in .post-info .container .box-design .photo-upload .post-upl p i,
+.post-section .post-section-in .post-info .container .post-filter .photo-upload .post-upl p i,
+.post-section .post-section-in .post-info .container .post-div .photo-upload .post-upl p i {
+  cursor: pointer;
+  text-align: center;
+  font-size: 14px;
+  margin: 0px;
+  padding: 0px;
+  -webkit-font-smoothing: antialiased;
+  display: inline-block;
+  font-style: normal;
+  font-variant: normal;
+  text-rendering: auto;
+  line-height: 1;
+  font-family: "Font Awesome 5 Free";
+  font-weight: 900;
+  margin-right: 5px;
+}
+.post-section .post-section-in .post-info .container .box-design .photo-upload .post-upl p #video,
+.post-section .post-section-in .post-info .container .post-filter .photo-upload .post-upl p #video,
+.post-section .post-section-in .post-info .container .post-div .photo-upload .post-upl p #video {
+  color: #E42645;
+}
+.post-section .post-section-in .post-info .container .box-design .photo-upload .post-upl p #images,
+.post-section .post-section-in .post-info .container .post-filter .photo-upload .post-upl p #images,
+.post-section .post-section-in .post-info .container .post-div .photo-upload .post-upl p #images {
+  color: #41B35D;
+}
+.post-section .post-section-in .post-info .container .box-design .photo-upload .post-upl p #flag,
+.post-section .post-section-in .post-info .container .post-filter .photo-upload .post-upl p #flag,
+.post-section .post-section-in .post-info .container .post-div .photo-upload .post-upl p #flag {
+  color: #3AA8CB;
+}
+.post-section .post-section-in .post-info .container .box-design .filter-site,
+.post-section .post-section-in .post-info .container .post-filter .filter-site,
+.post-section .post-section-in .post-info .container .post-div .filter-site {
+  font-family: arial;
+  margin: 0px;
+  padding: 0px;
+  position: relative;
+  padding-bottom: 10px;
+  border-bottom: 1px solid rgba(51, 51, 51, 0.2);
+}
+.post-section .post-section-in .post-info .container .box-design .filter-site span,
+.post-section .post-section-in .post-info .container .post-filter .filter-site span,
+.post-section .post-section-in .post-info .container .post-div .filter-site span {
+  position: absolute;
+  top: 10px;
+  left: 0px;
+  font-size: 16px;
+  font-weight: bold;
+}
+.post-section .post-section-in .post-info .container .box-design .filter-site .fil-ter,
+.post-section .post-section-in .post-info .container .post-filter .filter-site .fil-ter,
+.post-section .post-section-in .post-info .container .post-div .filter-site .fil-ter {
+  text-align: right;
+}
+.post-section .post-section-in .post-info .container .box-design .filter-site .fil-ter button,
+.post-section .post-section-in .post-info .container .post-filter .filter-site .fil-ter button,
+.post-section .post-section-in .post-info .container .post-div .filter-site .fil-ter button {
+  margin: 0px;
+  padding: 8px 10px;
+  border-radius: 5px;
+  border: none;
+  outline: none;
+  background-color: #E4E6E9;
+  cursor: pointer;
+}
+.post-section .post-section-in .post-info .container .box-design .list-type,
+.post-section .post-section-in .post-info .container .post-filter .list-type,
+.post-section .post-section-in .post-info .container .post-div .list-type {
+  display: flex;
+  flex-direction: row;
+}
+.post-section .post-section-in .post-info .container .box-design .list-type .activ-navbar,
+.post-section .post-section-in .post-info .container .post-filter .list-type .activ-navbar,
+.post-section .post-section-in .post-info .container .post-div .list-type .activ-navbar {
+  position: relative;
+  background-color: #fff;
+  color: #1877F2;
+}
+.post-section .post-section-in .post-info .container .box-design .list-type .fil-list,
+.post-section .post-section-in .post-info .container .post-filter .list-type .fil-list,
+.post-section .post-section-in .post-info .container .post-div .list-type .fil-list {
+  font-size: 15px;
+  color: #333;
+  padding: 10px 0px;
+  cursor: pointer;
+}
+.post-section .post-section-in .post-info .container .box-design .list-type i,
+.post-section .post-section-in .post-info .container .post-filter .list-type i,
+.post-section .post-section-in .post-info .container .post-div .list-type i {
+  text-align: center;
+  font-size: 15px;
+  cursor: pointer;
+  margin: 0px;
+  padding: 0px;
+  -webkit-font-smoothing: antialiased;
+  display: inline-block;
+  font-style: normal;
+  font-variant: normal;
+  text-rendering: auto;
+  line-height: 1;
+  font-family: "Font Awesome 5 Free";
+  font-weight: 900;
+  margin-right: 5px;
+}
+.post-section .post-section-in .post-info .container .box-design .list-type .ffil-list,
+.post-section .post-section-in .post-info .container .post-filter .list-type .ffil-list,
+.post-section .post-section-in .post-info .container .post-div .list-type .ffil-list {
+  color: #1877F2 !important;
+}
+.post-section .post-section-in .post-info .container .box-design .post-upload,
+.post-section .post-section-in .post-info .container .post-filter .post-upload,
+.post-section .post-section-in .post-info .container .post-div .post-upload {
+  font-family: "Segoe UI", sans-serif;
+  margin: 0px;
+  padding: 0px;
+  display: grid;
+  grid-template-columns: 1fr 7fr;
+  border-bottom: 1px solid #ccc;
+  padding-bottom: 10px;
+}
+.post-section .post-section-in .post-info .container .box-design .post-upload .profile-div,
+.post-section .post-section-in .post-info .container .post-filter .post-upload .profile-div,
+.post-section .post-section-in .post-info .container .post-div .post-upload .profile-div {
+  margin: 0px;
+  padding: 0px;
+  width: 36px;
+  height: 36px;
+  border-radius: 50%;
+}
+.post-section .post-section-in .post-info .container .box-design .post-upload .profile-div img,
+.post-section .post-section-in .post-info .container .post-filter .post-upload .profile-div img,
+.post-section .post-section-in .post-info .container .post-div .post-upload .profile-div img {
+  margin: 0px;
+  padding: 0px;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  border-radius: 50%;
+  cursor: pointer;
+}
+.post-section .post-section-in .post-info .container .box-design .post-upload .text-post,
+.post-section .post-section-in .post-info .container .post-filter .post-upload .text-post,
+.post-section .post-section-in .post-info .container .post-div .post-upload .text-post {
+  margin: 0px;
+  position: relative;
+  width: 100%;
+  padding: 7px 10px;
+  box-sizing: border-box;
+  border-radius: 25px;
+  background-color: #E4E6EB;
+  cursor: pointer;
+}
+.post-section .post-section-in .post-info .container .box-design .post-upload .text-post span,
+.post-section .post-section-in .post-info .container .post-filter .post-upload .text-post span,
+.post-section .post-section-in .post-info .container .post-div .post-upload .text-post span {
+  cursor: pointer;
+  margin: 0px;
+  padding: 0px;
+  position: absolute;
+  left: 15px;
+  top: 50%;
+  transform: translateY(-50%);
+  font-size: 15px;
+  color: #333;
+}
+.post-section .post-section-in .post-info .container .box-design .photo-upload,
+.post-section .post-section-in .post-info .container .post-filter .photo-upload,
+.post-section .post-section-in .post-info .container .post-div .photo-upload {
+  margin: 0px;
+  display: flex;
+  flex-direction: row;
+  padding: 10px 0px 0px 0px;
+}
+.post-section .post-section-in .post-info .container .box-design .photo-upload .post-upl,
+.post-section .post-section-in .post-info .container .post-filter .photo-upload .post-upl,
+.post-section .post-section-in .post-info .container .post-div .photo-upload .post-upl {
+  margin: 0px;
+  width: 100%;
+  padding: 5px 5px;
+  box-sizing: border-box;
+  background-color: #ffffff;
+  border-radius: 20px;
+  cursor: pointer;
+}
+.post-section .post-section-in .post-info .container .box-design .photo-upload .post-upl p,
+.post-section .post-section-in .post-info .container .post-filter .photo-upload .post-upl p,
+.post-section .post-section-in .post-info .container .post-div .photo-upload .post-upl p {
+  cursor: pointer;
+  margin: 0px;
+  padding: 5px 0px;
+  text-align: center;
+  font-size: 14px;
+  color: #333;
+}
+.post-section .post-section-in .post-info .container .box-design .photo-upload .post-upl p i,
+.post-section .post-section-in .post-info .container .post-filter .photo-upload .post-upl p i,
+.post-section .post-section-in .post-info .container .post-div .photo-upload .post-upl p i {
+  cursor: pointer;
+  text-align: center;
+  font-size: 14px;
+  margin: 0px;
+  padding: 0px;
+  -webkit-font-smoothing: antialiased;
+  display: inline-block;
+  font-style: normal;
+  font-variant: normal;
+  text-rendering: auto;
+  line-height: 1;
+  font-family: "Font Awesome 5 Free";
+  font-weight: 900;
+  margin-right: 5px;
+}
+.post-section .post-section-in .post-info .container .box-design .photo-upload .post-upl p #video,
+.post-section .post-section-in .post-info .container .post-filter .photo-upload .post-upl p #video,
+.post-section .post-section-in .post-info .container .post-div .photo-upload .post-upl p #video {
+  color: #E42645;
+}
+.post-section .post-section-in .post-info .container .box-design .photo-upload .post-upl p #images,
+.post-section .post-section-in .post-info .container .post-filter .photo-upload .post-upl p #images,
+.post-section .post-section-in .post-info .container .post-div .photo-upload .post-upl p #images {
+  color: #41B35D;
+}
+.post-section .post-section-in .post-info .container .box-design .photo-upload .post-upl p #flag,
+.post-section .post-section-in .post-info .container .post-filter .photo-upload .post-upl p #flag,
+.post-section .post-section-in .post-info .container .post-div .photo-upload .post-upl p #flag {
+  color: #3AA8CB;
+}
+.post-section .post-section-in .post-info .container .box-design .filter-site,
+.post-section .post-section-in .post-info .container .post-filter .filter-site,
+.post-section .post-section-in .post-info .container .post-div .filter-site {
+  font-family: arial;
+  margin: 0px;
+  padding: 0px;
+  position: relative;
+  padding-bottom: 10px;
+  border-bottom: 1px solid rgba(51, 51, 51, 0.2);
+}
+.post-section .post-section-in .post-info .container .box-design .filter-site span,
+.post-section .post-section-in .post-info .container .post-filter .filter-site span,
+.post-section .post-section-in .post-info .container .post-div .filter-site span {
+  position: absolute;
+  top: 10px;
+  left: 0px;
+  font-size: 16px;
+  font-weight: bold;
+}
+.post-section .post-section-in .post-info .container .box-design .filter-site .fil-ter,
+.post-section .post-section-in .post-info .container .post-filter .filter-site .fil-ter,
+.post-section .post-section-in .post-info .container .post-div .filter-site .fil-ter {
+  text-align: right;
+}
+.post-section .post-section-in .post-info .container .box-design .filter-site .fil-ter button,
+.post-section .post-section-in .post-info .container .post-filter .filter-site .fil-ter button,
+.post-section .post-section-in .post-info .container .post-div .filter-site .fil-ter button {
+  margin: 0px;
+  padding: 8px 10px;
+  border-radius: 5px;
+  border: none;
+  outline: none;
+  background-color: #E4E6E9;
+  cursor: pointer;
+}
+.post-section .post-section-in .post-info .container .box-design .list-type,
+.post-section .post-section-in .post-info .container .post-filter .list-type,
+.post-section .post-section-in .post-info .container .post-div .list-type {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  margin: 0px;
+  padding: 0px;
+  position: relative;
+  gap: 50px;
+}
+.post-section .post-section-in .post-info .container .box-design .list-type .activ-navbar,
+.post-section .post-section-in .post-info .container .post-filter .list-type .activ-navbar,
+.post-section .post-section-in .post-info .container .post-div .list-type .activ-navbar {
+  position: relative;
+  background-color: #fff !important;
+  color: #1877F2 !important;
+}
+.post-section .post-section-in .post-info .container .box-design .list-type .activ-navbar :after,
+.post-section .post-section-in .post-info .container .post-filter .list-type .activ-navbar :after,
+.post-section .post-section-in .post-info .container .post-div .list-type .activ-navbar :after {
+  position: absolute;
+  content: "";
+  bottom: 0px;
+  left: 0px;
+  width: 100%;
+  height: 3px;
+  background-color: #1877F2;
+}
+.post-section .post-section-in .post-info .container .box-design .list-type .fil-list,
+.post-section .post-section-in .post-info .container .post-filter .list-type .fil-list,
+.post-section .post-section-in .post-info .container .post-div .list-type .fil-list {
+  font-size: 15px;
+  color: #333;
+  padding: 10px 0px;
+  cursor: pointer;
+}
+.post-section .post-section-in .post-info .container .box-design .list-type i,
+.post-section .post-section-in .post-info .container .post-filter .list-type i,
+.post-section .post-section-in .post-info .container .post-div .list-type i {
+  text-align: center;
+  font-size: 15px;
+  cursor: pointer;
+  margin: 0px;
+  padding: 0px;
+  -webkit-font-smoothing: antialiased;
+  display: inline-block;
+  font-style: normal;
+  font-variant: normal;
+  text-rendering: auto;
+  line-height: 1;
+  font-family: "Font Awesome 5 Free";
+  font-weight: 900;
+  margin-right: 5px;
+}
+.post-section .post-section-in .post-info .container .box-design .list-type .ffil-list,
+.post-section .post-section-in .post-info .container .post-filter .list-type .ffil-list,
+.post-section .post-section-in .post-info .container .post-div .list-type .ffil-list {
+  color: #1877F2 !important;
+}
+.post-section .post-section-in .post-info .container .box-design .post-information,
+.post-section .post-section-in .post-info .container .post-filter .post-information,
+.post-section .post-section-in .post-info .container .post-div .post-information {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  margin-bottom: 8px;
+  padding-bottom: 20px;
+  border-bottom: 1px solid #ccc;
+}
+.post-section .post-section-in .post-info .container .box-design .post-information .post-profile,
+.post-section .post-section-in .post-info .container .post-filter .post-information .post-profile,
+.post-section .post-section-in .post-info .container .post-div .post-information .post-profile {
+  display: flex;
+  align-items: center;
+}
+.post-section .post-section-in .post-info .container .box-design .post-information .post-profile .post-profile-img,
+.post-section .post-section-in .post-info .container .post-filter .post-information .post-profile .post-profile-img,
+.post-section .post-section-in .post-info .container .post-div .post-information .post-profile .post-profile-img {
+  width: 45px;
+  height: 45px;
+  border-radius: 50%;
+  overflow: hidden;
+}
+.post-section .post-section-in .post-info .container .box-design .post-information .post-profile .post-profile-img img,
+.post-section .post-section-in .post-info .container .post-filter .post-information .post-profile .post-profile-img img,
+.post-section .post-section-in .post-info .container .post-div .post-information .post-profile .post-profile-img img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  cursor: pointer;
+}
+.post-section .post-section-in .post-info .container .box-design .post-information .post-details,
+.post-section .post-section-in .post-info .container .post-filter .post-information .post-details,
+.post-section .post-section-in .post-info .container .post-div .post-information .post-details {
+  display: flex;
+  flex-direction: row;
+  margin-left: 5px;
+  width: 100%;
+  justify-content: space-between;
+}
+.post-section .post-section-in .post-info .container .box-design .post-information .post-details .post-name,
+.post-section .post-section-in .post-info .container .post-filter .post-information .post-details .post-name,
+.post-section .post-section-in .post-info .container .post-div .post-information .post-details .post-name {
+  display: flex;
+  flex-direction: column;
+}
+.post-section .post-section-in .post-info .container .box-design .post-information .post-details .post-name h2,
+.post-section .post-section-in .post-info .container .post-filter .post-information .post-details .post-name h2,
+.post-section .post-section-in .post-info .container .post-div .post-information .post-details .post-name h2 {
+  margin: 0;
+  font-size: 24px;
+  color: #000000;
+}
+.post-section .post-section-in .post-info .container .box-design .post-information .post-details .post-name h2 a,
+.post-section .post-section-in .post-info .container .post-filter .post-information .post-details .post-name h2 a,
+.post-section .post-section-in .post-info .container .post-div .post-information .post-details .post-name h2 a {
+  text-decoration: none;
+  color: #000000;
+}
+.post-section .post-section-in .post-info .container .box-design .post-information .post-details .post-name p,
+.post-section .post-section-in .post-info .container .post-filter .post-information .post-details .post-name p,
+.post-section .post-section-in .post-info .container .post-div .post-information .post-details .post-name p {
+  margin: 0;
+  font-size: 12px;
+  color: #333;
+}
+.post-section .post-section-in .post-info .container .box-design .post-information .post-details .post-name p a,
+.post-section .post-section-in .post-info .container .post-filter .post-information .post-details .post-name p a,
+.post-section .post-section-in .post-info .container .post-div .post-information .post-details .post-name p a {
+  text-decoration: none;
+  color: #333;
+}
+.post-section .post-section-in .post-info .container .box-design .post-information .post-details .post-name p span,
+.post-section .post-section-in .post-info .container .post-filter .post-information .post-details .post-name p span,
+.post-section .post-section-in .post-info .container .post-div .post-information .post-details .post-name p span {
+  margin-left: 8px;
+}
+.post-section .post-section-in .post-info .container .box-design .post-information .post-details .post-name p span i,
+.post-section .post-section-in .post-info .container .post-filter .post-information .post-details .post-name p span i,
+.post-section .post-section-in .post-info .container .post-div .post-information .post-details .post-name p span i {
+  color: #333;
+}
+.post-section .post-section-in .post-info .container .box-design .post-information .three-dot-btn,
+.post-section .post-section-in .post-info .container .post-filter .post-information .three-dot-btn,
+.post-section .post-section-in .post-info .container .post-div .post-information .three-dot-btn {
+  cursor: pointer;
+  font-size: 24px;
+  color: #333;
+}
+.post-section .post-section-in .post-info .container .box-design .post-text,
+.post-section .post-section-in .post-info .container .post-filter .post-text,
+.post-section .post-section-in .post-info .container .post-div .post-text {
+  margin: 16px 0;
+  font-size: 14px;
+  color: #000000;
+}
+.post-section .post-section-in .post-info .container .box-design .post-stats,
+.post-section .post-section-in .post-info .container .post-filter .post-stats,
+.post-section .post-section-in .post-info .container .post-div .post-stats {
+  margin-bottom: 8px;
+  border-bottom: 1px solid #ccc;
+  border-top: 1px solid #ccc;
+  padding-top: 5px;
+  padding-bottom: 5px;
+}
+.post-section .post-section-in .post-info .container .box-design .post-stats .like-comment-share,
+.post-section .post-section-in .post-info .container .post-filter .post-stats .like-comment-share,
+.post-section .post-section-in .post-info .container .post-div .post-stats .like-comment-share {
+  display: flex;
+  justify-content: space-between;
+  flex-direction: row;
+  height: 17px;
+}
+.post-section .post-section-in .post-info .container .box-design .post-stats .like-comment-share .like-count,
+.post-section .post-section-in .post-info .container .post-filter .post-stats .like-comment-share .like-count,
+.post-section .post-section-in .post-info .container .post-div .post-stats .like-comment-share .like-count {
+  display: flex;
+  align-items: center;
+  margin-right: 8px;
+}
+.post-section .post-section-in .post-info .container .box-design .post-stats .like-comment-share .like-count .icon-show,
+.post-section .post-section-in .post-info .container .post-filter .post-stats .like-comment-share .like-count .icon-show,
+.post-section .post-section-in .post-info .container .post-div .post-stats .like-comment-share .like-count .icon-show {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 20px;
+  height: 20px;
+  border-radius: 50%;
+  overflow: hidden;
+}
+.post-section .post-section-in .post-info .container .box-design .post-stats .like-comment-share .like-count .icon-show img,
+.post-section .post-section-in .post-info .container .box-design .post-stats .like-comment-share .like-count .icon-show i,
+.post-section .post-section-in .post-info .container .post-filter .post-stats .like-comment-share .like-count .icon-show img,
+.post-section .post-section-in .post-info .container .post-filter .post-stats .like-comment-share .like-count .icon-show i,
+.post-section .post-section-in .post-info .container .post-div .post-stats .like-comment-share .like-count .icon-show img,
+.post-section .post-section-in .post-info .container .post-div .post-stats .like-comment-share .like-count .icon-show i {
+  object-fit: cover;
+  color: #ffffff;
+}
+.post-section .post-section-in .post-info .container .box-design .post-stats .like-comment-share .like-count #like-icon,
+.post-section .post-section-in .post-info .container .post-filter .post-stats .like-comment-share .like-count #like-icon,
+.post-section .post-section-in .post-info .container .post-div .post-stats .like-comment-share .like-count #like-icon {
+  background-color: #1775d1;
+}
+.post-section .post-section-in .post-info .container .box-design .post-stats .like-comment-share .like-count #love-icon,
+.post-section .post-section-in .post-info .container .post-filter .post-stats .like-comment-share .like-count #love-icon,
+.post-section .post-section-in .post-info .container .post-div .post-stats .like-comment-share .like-count #love-icon {
+  background-color: #f02849;
+}
+.post-section .post-section-in .post-info .container .box-design .post-stats .like-comment-share .like-count .like-count-text,
+.post-section .post-section-in .post-info .container .post-filter .post-stats .like-comment-share .like-count .like-count-text,
+.post-section .post-section-in .post-info .container .post-div .post-stats .like-comment-share .like-count .like-count-text {
+  margin-left: 8px;
+  font-size: 12px;
+  color: #333;
+}
+.post-section .post-section-in .post-info .container .box-design .post-stats .like-comment-share p,
+.post-section .post-section-in .post-info .container .post-filter .post-stats .like-comment-share p,
+.post-section .post-section-in .post-info .container .post-div .post-stats .like-comment-share p {
+  margin: 0;
+  font-size: 12px;
+  color: #E4E6EB;
+}
+.post-section .post-section-in .post-info .container .box-design .post-stats .like-comment-share p a,
+.post-section .post-section-in .post-info .container .post-filter .post-stats .like-comment-share p a,
+.post-section .post-section-in .post-info .container .post-div .post-stats .like-comment-share p a {
+  text-decoration: none;
+  color: #333;
+  margin-right: 16px;
+}
+.post-section .post-section-in .post-info .container .box-design .post-actions,
+.post-section .post-section-in .post-info .container .post-filter .post-actions,
+.post-section .post-section-in .post-info .container .post-div .post-actions {
+  display: flex;
+  justify-content: space-between;
+  border-bottom: 1px solid #ccc;
+  flex-direction: row;
+}
+.post-section .post-section-in .post-info .container .box-design .post-actions .action-btn,
+.post-section .post-section-in .post-info .container .post-filter .post-actions .action-btn,
+.post-section .post-section-in .post-info .container .post-div .post-actions .action-btn {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  cursor: pointer;
+  font-size: 14px;
+  color: #333;
+}
+.post-section .post-section-in .post-info .container .box-design .post-actions .action-btn i,
+.post-section .post-section-in .post-info .container .post-filter .post-actions .action-btn i,
+.post-section .post-section-in .post-info .container .post-div .post-actions .action-btn i {
+  margin-right: 8px;
+}
+.post-section .post-section-in .post-info .container .box-design .comment-section,
+.post-section .post-section-in .post-info .container .post-filter .comment-section,
+.post-section .post-section-in .post-info .container .post-div .comment-section {
+  display: flex;
+  align-items: center;
+  margin-top: 8px;
+  flex-direction: row;
+  gap: 20px;
+}
+.post-section .post-section-in .post-info .container .box-design .comment-section a,
+.post-section .post-section-in .post-info .container .post-filter .comment-section a,
+.post-section .post-section-in .post-info .container .post-div .comment-section a {
+  border-radius: 50%;
+  overflow: hidden;
+}
+.post-section .post-section-in .post-info .container .box-design .comment-section a img,
+.post-section .post-section-in .post-info .container .post-filter .comment-section a img,
+.post-section .post-section-in .post-info .container .post-div .comment-section a img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  cursor: pointer;
+}
+.post-section .post-section-in .post-info .container .box-design .comment-section .comment-input,
+.post-section .post-section-in .post-info .container .post-filter .comment-section .comment-input,
+.post-section .post-section-in .post-info .container .post-div .comment-section .comment-input {
+  margin: 0px;
+  position: relative;
+  width: 100%;
+  border-radius: 25px;
+  background-color: #E4E6EB;
+  justify-content: space-between;
+  cursor: pointer;
+  display: flex;
+  flex-direction: row;
+  font-size: 15px;
+}
+.post-section .post-section-in .post-info .container .box-design .comment-section .comment-input input,
+.post-section .post-section-in .post-info .container .post-filter .comment-section .comment-input input,
+.post-section .post-section-in .post-info .container .post-div .comment-section .comment-input input {
+  border: none;
+  outline: none;
+  background: none;
+  padding: 8px 0 8px 8px;
+  color: #333;
+}
+.post-section .post-section-in .post-info .container .box-design .comment-section .comment-input .comment-icons,
+.post-section .post-section-in .post-info .container .post-filter .comment-section .comment-input .comment-icons,
+.post-section .post-section-in .post-info .container .post-div .comment-section .comment-input .comment-icons {
+  display: flex;
+  align-items: center;
+  flex-direction: row;
+}
+.post-section .post-section-in .post-info .container .box-design .comment-section .comment-input .comment-icons div,
+.post-section .post-section-in .post-info .container .post-filter .comment-section .comment-input .comment-icons div,
+.post-section .post-section-in .post-info .container .post-div .comment-section .comment-input .comment-icons div {
+  cursor: pointer;
+}
+.post-section .post-section-in .post-info .container .box-design .comment-section .comment-input .comment-icons div i,
+.post-section .post-section-in .post-info .container .box-design .comment-section .comment-input .comment-icons div img,
+.post-section .post-section-in .post-info .container .post-filter .comment-section .comment-input .comment-icons div i,
+.post-section .post-section-in .post-info .container .post-filter .comment-section .comment-input .comment-icons div img,
+.post-section .post-section-in .post-info .container .post-div .comment-section .comment-input .comment-icons div i,
+.post-section .post-section-in .post-info .container .post-div .comment-section .comment-input .comment-icons div img {
+  width: 20px;
+  height: 20px;
+  object-fit: cover;
+  color: #333;
+}
+.post-section .post-section-in .post-info .container .box-design .content,
+.post-section .post-section-in .post-info .container .post-filter .content,
+.post-section .post-section-in .post-info .container .post-div .content {
+  margin: 15px 0;
+}
+.post-section .post-section-in .post-info .container .box-design .content .link-preview,
+.post-section .post-section-in .post-info .container .post-filter .content .link-preview,
+.post-section .post-section-in .post-info .container .post-div .content .link-preview {
+  text-decoration: none;
+  color: inherit;
+  font-size: 14px;
+}
+.post-section .post-section-in .post-info .container .box-design .content .link-preview p,
+.post-section .post-section-in .post-info .container .post-filter .content .link-preview p,
+.post-section .post-section-in .post-info .container .post-div .content .link-preview p {
+  margin-bottom: 8px;
+  color: #1775d1;
+}
+.post-section .post-section-in .post-info .container .box-design .content .link-preview .preview-container,
+.post-section .post-section-in .post-info .container .post-filter .content .link-preview .preview-container,
+.post-section .post-section-in .post-info .container .post-div .content .link-preview .preview-container {
+  display: flex;
+  border-radius: 5px;
+  overflow: hidden;
+  display: flex;
+  flex-direction: column;
+}
+.post-section .post-section-in .post-info .container .box-design .content .link-preview .preview-container .preview-image,
+.post-section .post-section-in .post-info .container .post-filter .content .link-preview .preview-container .preview-image,
+.post-section .post-section-in .post-info .container .post-div .content .link-preview .preview-container .preview-image {
+  width: 100%;
+  object-fit: cover;
+}
+.post-section .post-section-in .post-info .container .box-design .content .link-preview .preview-container .preview-details,
+.post-section .post-section-in .post-info .container .post-filter .content .link-preview .preview-container .preview-details,
+.post-section .post-section-in .post-info .container .post-div .content .link-preview .preview-container .preview-details {
+  padding: 10px;
+  flex: 1;
+}
+.post-section .post-section-in .post-info .container .box-design .content .link-preview .preview-container .preview-details h3,
+.post-section .post-section-in .post-info .container .post-filter .content .link-preview .preview-container .preview-details h3,
+.post-section .post-section-in .post-info .container .post-div .content .link-preview .preview-container .preview-details h3 {
+  margin: 0 0 5px;
+  font-size: 14px;
+  color: #000000;
+}
+.post-section .post-section-in .post-info .container .box-design .content .link-preview .preview-container .preview-details p,
+.post-section .post-section-in .post-info .container .post-filter .content .link-preview .preview-container .preview-details p,
+.post-section .post-section-in .post-info .container .post-div .content .link-preview .preview-container .preview-details p {
+  margin: 0 0 5px;
+  font-size: 12px;
+  color: #333;
+}
+.post-section .post-section-in .post-info .container .box-design .content .link-preview .preview-container .preview-details span,
+.post-section .post-section-in .post-info .container .post-filter .content .link-preview .preview-container .preview-details span,
+.post-section .post-section-in .post-info .container .post-div .content .link-preview .preview-container .preview-details span {
+  font-size: 12px;
+  color: #b0b3b8;
+}
+.post-section .post-section-in .post-info .container .box-design .post-background-img,
+.post-section .post-section-in .post-info .container .post-filter .post-background-img,
+.post-section .post-section-in .post-info .container .post-div .post-background-img {
+  font-family: arial;
+  margin: 0px;
+  padding: 0px;
+  background-color: #fff;
+  color: #fff;
+  width: 100%;
+  height: 100%;
+  box-sizing: border-box;
+  overflow: hidden;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-column-gap: 3px;
+}
+.post-section .post-section-in .post-info .container .box-design .post-background-img div,
+.post-section .post-section-in .post-info .container .post-filter .post-background-img div,
+.post-section .post-section-in .post-info .container .post-div .post-background-img div {
+  color: #fff;
+  margin: 0px;
+  padding: 0px;
+  box-sizing: border-box;
+  overflow: hidden;
+}
+.post-section .post-section-in .post-info .container .box-design .post-background-img div img,
+.post-section .post-section-in .post-info .container .post-filter .post-background-img div img,
+.post-section .post-section-in .post-info .container .post-div .post-background-img div img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+@media (max-width: 768px) {
+  .post-section .post-section-in {
+    flex-direction: column;
+    padding: 0 20px;
+  }
+  .post-section #flag-container {
+    display: none;
+  }
+}
