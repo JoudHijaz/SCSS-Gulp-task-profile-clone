@@ -20,5 +20,4 @@ This project focuses on modular SCSS architecture, clean UI design, and automati
 - JavaScript (basic interactivity)
 - Live-server / browser-sync
 
-## 📂 Project Structure
-├── dist/ │ └── (compiled HTML & CSS files) ├── scss/ │ ├── _variables.scss │ ├── _mixins.scss │ ├── _header.scss │ ├── _profile.scss │ └── main.scss ├── gulpfile.js ├── package.json └── index.html
+
